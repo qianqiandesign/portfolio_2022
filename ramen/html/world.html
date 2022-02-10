@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>A Journey to Ramen | Qianqian Wang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Josefin+Slab:400i" rel="stylesheet">
+
+
+</head>
+<body>
+	<section id="world_banner">		
+		<div class="navigation clearfix">
+			<div class="logo">
+				<a href="../index.html" class="logo_icon"><img src="../images/logo_icon.png" alt="logo"></a>
+			</div>
+			<nav class="clearfix">
+				<ul>
+					<li><a href="../index.html" class="text_underline">Home</a></li>
+					<li><a href="#" class="current text_underline">Ramen World</a></li>
+					<li><a href="ranking.html" class="text_underline">Ranking</a></li>
+					<li><a href="recipe.html" class="text_underline">Secret Recipe</a></li>
+					<li><a href="store.html" class="text_underline">Ramen Store @Bay</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="slogen">
+			<h1>RAMEN All OVER THE WORLD</h1>
+			<p class="subtitle">"The comfort food that took over the world"</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div id="world" class="clearfix">
+			<div class="product_filter">
+				<button id="all_country" class="filter_button">All Country</button>
+				<button id="china" class="filter_button">China</button>
+				<button id="hongkong" class="filter_button">HongKong</button>
+				<button id="korea" class="filter_button">Korea</button>
+				<button id="thailand" class="filter_button">Thailand</button>
+			</div>
+			<div class="product_row clearfix">
+				
+			</div>
+			
+		</div>
+			
+
+	</section>
+
+<footer>
+	<div class="footer_content clearfix">
+	<div class="logo">
+		<a href="../index.html" class="logo_icon"><img src="../images/logo_icon.png" alt="logo"></a>
+	</div>
+	<div class="social clearfix">
+		<!--  Official social media logos of facebook, twitter, instagram and linkedin downloaded from their websites. -->
+		<a href="https://www.linkedin.com/in/qianqianwang222"><img src="../images/linkedin.png" alt="linkedin"></a>
+		<a href="https://twitter.com/antongshu222"><img src="../images/twitter.png" alt="twitter"></a>
+		<a href="https://www.facebook.com/emily.wang.5249349"><img src="../images/facebook.png" alt="facebook"></a>
+	</div>
+	</div>
+	<p class="copyright">&copy;Qianqian Wang 2016</p>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="../js/script.js"></script>
+	<script id="entry-template" type="text/x-handlebars-template">
+		{{#each ramens}}
+		<div class="product_item">
+			<div class="image_holder">
+				<img src="{{image}}" alt="{{name}}">
+			</div>
+			<p class="product_name">{{name}}</p>
+			<p class="company">{{company}}  •  {{country}}</p>
+		</div>
+		{{/each}}
+	</script>
+	<script>
+		$(document).ready(function(){
+			filter.init();
+		});
+	</script>
+
+
+</body>
+
+
+
+
+</html>

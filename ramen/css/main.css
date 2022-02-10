@@ -1,0 +1,624 @@
+@font-face {
+  font-family: "Bernardo_Moda";
+  src: url("../fonts/Bernardo Moda.ttf") format("truetype");
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: "Josefin Sans", "Josefin Slab","Bernardo_Moda","Caveat";
+  font-size: 18px;
+  color: #766158;
+  font-weight: 400;
+}
+
+#banner {
+  background-image: url("../images/banner-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 650px;
+}
+
+#world_banner {
+  background-image: url("../images/world_bg-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 650px;
+}
+
+#recipe_banner {
+  background-image: url("../images/recipe_bg-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 650px;
+}
+
+.logo img {
+  width: 50px;
+  padding: 1em 0;
+  float: left;
+}
+
+.navigation {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation nav {
+  float: right;
+  padding: 2em 0 1em 0;
+}
+
+.navigation nav ul {
+  margin: 0;
+}
+
+.navigation nav li {
+  float: left;
+  margin-left: 2em;
+  list-style: none;
+}
+
+.navigation nav a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation nav .text_underline:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.navigation nav .text_underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.navigation .current {
+  color: #F16700;
+}
+
+
+.nav_sub {
+  background-color: #3C3532;
+}
+
+
+#slogen {
+  margin: 8em auto 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+#slogen h1 {
+  font-size: 2em;
+  font-family: "Bernardo_Moda";
+  letter-spacing: 0.1em;
+}
+
+#slogen .subtitle {
+  font-size: 1.25em;
+  letter-spacing: 0.08em;
+}
+
+
+#recipe_banner #slogen {
+  margin: 11em 0 0 30em;
+}
+
+
+.content, .content_recipe, .content_ranking {
+  background-image: url("../images/pattern-min.png");
+  background-repeat: repeat;
+  padding: 3em 0;
+}
+
+
+.content_ranking {
+  background-image: url("../images/pattern_dark-min.png");
+  padding: 0;
+}
+
+
+
+.title {
+  color: #F16700;
+  font-size: 1.85em;
+  font-family: "Bernardo_Moda";
+  text-align: center;
+  margin: 0 auto 1.5em auto;
+}
+
+
+#history {
+  width: 80%;
+  margin: 0em auto;
+}
+
+#history p {
+  color: #766158;
+  text-align: left;
+}
+
+
+#world {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.product_filter {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.product_filter button {
+  text-transform: uppercase;
+  padding: .5em 1.5em;
+  margin: 0 1em;
+  background-color: transparent;
+  color: #F16700;
+  border-radius: 2em;
+  border: 1px solid #F16700;
+  transition: all .4s ease-in-out;
+}
+
+.product_filter button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 40px 0 rgba(18, 25, 46, 0.1);
+  -moz-box-shadow: 0px 2px 40px 0 rgba(18, 25, 46, 0.1);
+  box-shadow: 0px 2px 40px 0 rgba(18, 25, 46, 0.1);
+  background-color: #F16700;
+  color: #ffffff;
+}
+
+
+.product_row {
+  margin: 1em 0 2em 0;
+}
+
+
+.product_item {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.product_item img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.product_item img:hover {
+  -moz-box-shadow: 0px 20px 50px rgba(18, 25, 46, 0.5);
+  -webkit-box-shadow: 0px 20px 50px rgba(18, 25, 46, 0.5);
+  box-shadow: 0px 20px 50px rgba(18, 25, 46, 0.5);
+}
+
+.product_item .product_name {
+  font-size: 1.15em;
+  margin: 0.5em 0 0.3em 0;
+  color: #F16700;
+}
+
+.product_item .company {
+  margin: 0;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+
+#ranking img {
+  width: 100%;
+}
+
+#ranking .title {
+  font-size: 42px;
+  text-align: center;
+  margin: 35px 0 0 250px;
+  text-transform: uppercase;
+}
+
+
+#ranking_list {
+  width: 1000px;
+  margin: -80px auto 40px auto;
+  font-family: "Caveat";
+  font-size: 28px;
+  color: #FFF8E8;
+}
+
+
+.column_four {
+  float: left;
+}
+
+
+.column_small {
+  width: 20%;
+  height: 280px;
+}
+
+
+.column_mid {
+  width: 25%;
+}
+
+
+.column_big {
+  width: 30%;
+}
+
+
+.column_bigger {
+  width: 35%;
+}
+
+
+.group_one .ranking_one {
+  width: 100%;
+}
+
+.group_one .ranking_one:hover {
+  cursor: pointer;
+}
+
+.group_one .title_one {
+  margin: 120px 0;
+}
+
+.group_one .line_one {
+  width: 200px;
+  margin: 140px 0 0 20px;
+}
+
+.group_one .title_two {
+  margin-left: 80px;
+}
+
+.group_one .ranking_two {
+  width: 100%;
+  margin-top: 140px;
+}
+
+.group_one .ranking_two:hover {
+  cursor: pointer;
+}
+
+.group_one .icon_two {
+  width: 100px;
+  margin: -30px 0 0 200px;
+}
+
+.group_one .icon_four {
+  width: 150px;
+  margin-left: 80px;
+}
+
+.group_one .icon_six {
+  width: 250px;
+}
+
+.group_one .line_four {
+  width: 200px;
+  margin: 110px 0 0 20px;
+}
+
+
+.group_two .icon_one {
+  position: relative;
+  left: -40px;
+  top: -60px;
+  width: 150px;
+}
+
+.group_two .line_three {
+  width: 150px;
+  position: relative;
+  left: 40px;
+  top: -60px;
+}
+
+.group_two .title_three {
+  margin-top: 120px;
+}
+
+.group_two .ranking_three {
+  width: 100%;
+}
+
+
+.group_two .ranking_four:hover {
+  cursor: pointer;
+}
+
+.group_two .ranking_three:hover {
+  cursor: pointer;
+}
+
+
+.group_two .icon_two {
+  width: 60px;
+  position: relative;
+  left: 150px;
+  top: 60px;
+}
+
+.group_two .icon_three {
+  width: 100px;
+  position: relative;
+  left: 200px;
+  top: -70px;
+}
+
+.group_two .icon_five {
+  width: 100px;
+  position: relative;
+  top: -40px;
+  left: -40px;
+}
+
+
+.content_recipe {
+  padding: 0;
+}
+
+
+#recipe {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.odd_item {
+  background-color: #FFBE67;
+  -moz-box-shadow: 0px 0px 10px rgba(18, 25, 46, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(18, 25, 46, 0.5);
+  box-shadow: 0px 0px 10px rgba(18, 25, 46, 0.5);
+}
+
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0 10px 0;
+  position: relative;
+}
+
+
+.recipe_info {
+  float: left;
+  width: 60%;
+}
+
+
+.step {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+
+.recipe_text {
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.recipe_text_ep {
+  padding-bottom: 3.5em;
+
+}
+
+
+.timeline {
+  margin: 15px 0;
+}
+
+
+.period {
+  float: left;
+  padding-right: 20px;
+}
+
+.period h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.divider {
+  padding-left: 20px;
+  border-left: 1px solid #766158;
+}
+
+
+.recipe_intro {
+  float: right;
+  margin: 10px 0 0 0;
+  width: 40%;
+}
+
+.recipe_intro p {
+  font-family: "Bernardo_Moda";
+  font-size: 32px;
+  color: #FF4444;
+  margin: 15px 0;
+}
+
+
+.recipe_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+.even_item {
+  text-align: right;
+}
+
+.even_item .recipe_info {
+  float: right;
+  text-align: right;
+}
+
+.even_item .recipe_info .timeline {
+  float: right;
+}
+
+.even_item .recipe_info .timeline .period {
+  padding: 0 20px 0 20px;
+}
+
+.even_item .recipe_info .recipe_text {
+  float: right;
+  text-align: right;
+  width: 90%;
+}
+
+.even_item .recipe_intro {
+  float: left;
+  text-align: right;
+}
+
+.even_item .recipe_img {
+  width: 450px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+.store_list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.store_item {
+  padding: 0 1em;
+}
+
+
+.store_img {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.store_img img {
+  border: 2px solid #F16700;
+  border-radius: 5em;
+  padding: 5px;
+}
+
+
+.store_info {
+  width: 65%;
+  float: left;
+}
+
+.store_info .name {
+  font-size: 24px;
+  color: #F16700;
+  margin: 15px 0 15px 20px;
+}
+
+.store_info .address {
+  font-size: 20px;
+  margin: 0 0 10px 20px;
+}
+
+.store_info .recommendation {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0 0 10px 20px;
+}
+
+
+.yelp {
+  width: 15%;
+  float: right;
+  padding-top: 36px;
+}
+
+.yelp a {
+  text-decoration: none;
+  color: #766158;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.yelp a p {
+  margin: 0 auto;
+}
+
+.yelp a img {
+  text-align: center;
+}
+
+
+.breaker img {
+  margin: 5px 0;
+}
+
+
+footer {
+  background-color: #3C3532;
+}
+
+footer .footer_content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .social {
+  float: right;
+  padding-top: 2em;
+}
+
+footer .social a {
+  float: left;
+  margin-left: 1em;
+}
+
+footer .social a img {
+  width: 35px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+footer .social a:hover img {
+  -webkit-filter: none;
+  filter: none;
+}
+
+footer .copyright {
+  color: #ffffff;
+  font-size: 0.85em;
+  text-align: center;
+  margin: 0;
+}
